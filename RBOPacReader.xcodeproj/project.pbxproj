@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		243732CD1DD3927900CCC4A7 /* BinaryFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732CC1DD3927900CCC4A7 /* BinaryFileBuilder.swift */; };
+		243732CF1DD392B300CCC4A7 /* BinaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732CE1DD392B300CCC4A7 /* BinaryFile.swift */; };
+		243732D11DD392ED00CCC4A7 /* PACFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732D01DD392ED00CCC4A7 /* PACFileBuilder.swift */; };
+		243732D31DD3933100CCC4A7 /* IMGFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732D21DD3933100CCC4A7 /* IMGFileBuilder.swift */; };
+		243732D51DD39D8300CCC4A7 /* WAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732D41DD39D8300CCC4A7 /* WAV.swift */; };
+		243732D71DD39EB200CCC4A7 /* WAVFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732D61DD39EB200CCC4A7 /* WAVFileBuilder.swift */; };
+		243732DC1DD3B56A00CCC4A7 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732DB1DD3B56A00CCC4A7 /* FileController.swift */; };
+		243732DE1DD3B64E00CCC4A7 /* IMGFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732DD1DD3B64E00CCC4A7 /* IMGFileController.swift */; };
+		243732E01DD3B6E600CCC4A7 /* PACFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732DF1DD3B6E600CCC4A7 /* PACFileController.swift */; };
+		243732E21DD3B71F00CCC4A7 /* WAVFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243732E11DD3B71F00CCC4A7 /* WAVFileController.swift */; };
+		244F8DB21DE39447000DF66E /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DB11DE39447000DF66E /* OrderedDictionary.swift */; };
+		244F8DB51DE39576000DF66E /* DAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DB41DE39576000DF66E /* DAT.swift */; };
+		244F8DB71DE39587000DF66E /* UnknownTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DB61DE39587000DF66E /* UnknownTemp.swift */; };
+		244F8DB91DE4D390000DF66E /* NSBitmapImageRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DB81DE4D390000DF66E /* NSBitmapImageRep.swift */; };
+		244F8DBB1DE4F178000DF66E /* DATEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DBA1DE4F178000DF66E /* DATEffect.swift */; };
+		244F8DBD1DE4F1CF000DF66E /* DATPose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DBC1DE4F1CF000DF66E /* DATPose.swift */; };
+		244F8DBF1DE4F611000DF66E /* DATBodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DBE1DE4F611000DF66E /* DATBodyPart.swift */; };
+		244F8DC11DE506DB000DF66E /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DC01DE506DB000DF66E /* PoseBuilder.swift */; };
+		244F8DC31DE509CE000DF66E /* BodyPartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DC21DE509CD000DF66E /* BodyPartBuilder.swift */; };
+		244F8DC51DE51CD0000DF66E /* EffectImageDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DC41DE51CD0000DF66E /* EffectImageDataBuilder.swift */; };
+		244F8DC71DE64950000DF66E /* EffectBlockDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F8DC61DE64950000DF66E /* EffectBlockDataBuilder.swift */; };
+		2487E7601DD4984100EA939B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487E75C1DD4984100EA939B /* Main.storyboard */; };
+		2487E7611DD4984100EA939B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2487E75F1DD4984100EA939B /* Assets.xcassets */; };
+		2487E7631DD49AAF00EA939B /* IMGFileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487E7621DD49AAF00EA939B /* IMGFileController.xib */; };
+		2487E7651DD49C8F00EA939B /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E7641DD49C8F00EA939B /* NSObject.swift */; };
+		2487E7691DD4F47600EA939B /* DATFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E7681DD4F47600EA939B /* DATFileBuilder.swift */; };
+		2499FA891DD25BF600A1B91E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA7A1DD25BF600A1B91E /* AppDelegate.swift */; };
+		2499FA8A1DD25BF600A1B91E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA7C1DD25BF600A1B91E /* MainController.swift */; };
+		2499FA8B1DD25BF600A1B91E /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA7E1DD25BF600A1B91E /* Collection.swift */; };
+		2499FA8C1DD25BF600A1B91E /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA7F1DD25BF600A1B91E /* InputStream.swift */; };
+		2499FA8D1DD25BF600A1B91E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA801DD25BF600A1B91E /* String.swift */; };
+		2499FA8E1DD25BF600A1B91E /* PAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA821DD25BF600A1B91E /* PAC.swift */; };
+		2499FA931DD2678700A1B91E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA921DD2678700A1B91E /* File.swift */; };
+		2499FA951DD267CC00A1B91E /* IMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499FA941DD267CC00A1B91E /* IMG.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		243732CC1DD3927900CCC4A7 /* BinaryFileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryFileBuilder.swift; sourceTree = "<group>"; };
+		243732CE1DD392B300CCC4A7 /* BinaryFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryFile.swift; sourceTree = "<group>"; };
+		243732D01DD392ED00CCC4A7 /* PACFileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PACFileBuilder.swift; sourceTree = "<group>"; };
+		243732D21DD3933100CCC4A7 /* IMGFileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMGFileBuilder.swift; sourceTree = "<group>"; };
+		243732D41DD39D8300CCC4A7 /* WAV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAV.swift; sourceTree = "<group>"; };
+		243732D61DD39EB200CCC4A7 /* WAVFileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAVFileBuilder.swift; sourceTree = "<group>"; };
+		243732DB1DD3B56A00CCC4A7 /* FileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
+		243732DD1DD3B64E00CCC4A7 /* IMGFileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMGFileController.swift; sourceTree = "<group>"; };
+		243732DF1DD3B6E600CCC4A7 /* PACFileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PACFileController.swift; sourceTree = "<group>"; };
+		243732E11DD3B71F00CCC4A7 /* WAVFileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAVFileController.swift; sourceTree = "<group>"; };
+		244F8DB11DE39447000DF66E /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
+		244F8DB41DE39576000DF66E /* DAT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAT.swift; sourceTree = "<group>"; };
+		244F8DB61DE39587000DF66E /* UnknownTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnknownTemp.swift; sourceTree = "<group>"; };
+		244F8DB81DE4D390000DF66E /* NSBitmapImageRep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBitmapImageRep.swift; sourceTree = "<group>"; };
+		244F8DBA1DE4F178000DF66E /* DATEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DATEffect.swift; sourceTree = "<group>"; };
+		244F8DBC1DE4F1CF000DF66E /* DATPose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DATPose.swift; sourceTree = "<group>"; };
+		244F8DBE1DE4F611000DF66E /* DATBodyPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DATBodyPart.swift; sourceTree = "<group>"; };
+		244F8DC01DE506DB000DF66E /* PoseBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
+		244F8DC21DE509CD000DF66E /* BodyPartBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyPartBuilder.swift; sourceTree = "<group>"; };
+		244F8DC41DE51CD0000DF66E /* EffectImageDataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectImageDataBuilder.swift; sourceTree = "<group>"; };
+		244F8DC61DE64950000DF66E /* EffectBlockDataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectBlockDataBuilder.swift; sourceTree = "<group>"; };
+		247E2A4D1DCFF2BB00851363 /* RBOPacReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBOPacReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2487E75D1DD4984100EA939B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2487E75F1DD4984100EA939B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2487E7621DD49AAF00EA939B /* IMGFileController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMGFileController.xib; sourceTree = "<group>"; };
+		2487E7641DD49C8F00EA939B /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		2487E7681DD4F47600EA939B /* DATFileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DATFileBuilder.swift; sourceTree = "<group>"; };
+		2499FA7A1DD25BF600A1B91E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2499FA7C1DD25BF600A1B91E /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		2499FA7E1DD25BF600A1B91E /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		2499FA7F1DD25BF600A1B91E /* InputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputStream.swift; sourceTree = "<group>"; };
+		2499FA801DD25BF600A1B91E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		2499FA821DD25BF600A1B91E /* PAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAC.swift; sourceTree = "<group>"; };
+		2499FA841DD25BF600A1B91E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2499FA921DD2678700A1B91E /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		2499FA941DD267CC00A1B91E /* IMG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMG.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		247E2A4A1DCFF2BB00851363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		243732CB1DD3926600CCC4A7 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				243732CC1DD3927900CCC4A7 /* BinaryFileBuilder.swift */,
+				2487E7681DD4F47600EA939B /* DATFileBuilder.swift */,
+				243732D01DD392ED00CCC4A7 /* PACFileBuilder.swift */,
+				243732D21DD3933100CCC4A7 /* IMGFileBuilder.swift */,
+				243732D61DD39EB200CCC4A7 /* WAVFileBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		243732DA1DD3B55C00CCC4A7 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				243732DB1DD3B56A00CCC4A7 /* FileController.swift */,
+				243732DD1DD3B64E00CCC4A7 /* IMGFileController.swift */,
+				243732DF1DD3B6E600CCC4A7 /* PACFileController.swift */,
+				243732E11DD3B71F00CCC4A7 /* WAVFileController.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		244F8DB31DE39576000DF66E /* DAT */ = {
+			isa = PBXGroup;
+			children = (
+				244F8DB41DE39576000DF66E /* DAT.swift */,
+				244F8DBE1DE4F611000DF66E /* DATBodyPart.swift */,
+				244F8DBA1DE4F178000DF66E /* DATEffect.swift */,
+				244F8DBC1DE4F1CF000DF66E /* DATPose.swift */,
+				244F8DC21DE509CD000DF66E /* BodyPartBuilder.swift */,
+				244F8DC01DE506DB000DF66E /* PoseBuilder.swift */,
+				244F8DB61DE39587000DF66E /* UnknownTemp.swift */,
+				244F8DC41DE51CD0000DF66E /* EffectImageDataBuilder.swift */,
+				244F8DC61DE64950000DF66E /* EffectBlockDataBuilder.swift */,
+			);
+			path = DAT;
+			sourceTree = "<group>";
+		};
+		247E2A441DCFF2BB00851363 = {
+			isa = PBXGroup;
+			children = (
+				247E2A4F1DCFF2BB00851363 /* RBOPacReader */,
+				247E2A4E1DCFF2BB00851363 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		247E2A4E1DCFF2BB00851363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				247E2A4D1DCFF2BB00851363 /* RBOPacReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247E2A4F1DCFF2BB00851363 /* RBOPacReader */ = {
+			isa = PBXGroup;
+			children = (
+				2499FA851DD25BF600A1B91E /* Resources */,
+				2499FA791DD25BF600A1B91E /* Sources */,
+				2499FA831DD25BF600A1B91E /* Supporting Files */,
+			);
+			path = RBOPacReader;
+			sourceTree = "<group>";
+		};
+		2487E75B1DD4984100EA939B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2487E75C1DD4984100EA939B /* Main.storyboard */,
+				2487E7621DD49AAF00EA939B /* IMGFileController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2487E75E1DD4984100EA939B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2487E75F1DD4984100EA939B /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2499FA791DD25BF600A1B91E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2499FA7A1DD25BF600A1B91E /* AppDelegate.swift */,
+				2499FA7B1DD25BF600A1B91E /* Controllers */,
+				2499FA7D1DD25BF600A1B91E /* Extensions */,
+				2499FA811DD25BF600A1B91E /* Files */,
+				244F8DB11DE39447000DF66E /* OrderedDictionary.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2499FA7B1DD25BF600A1B91E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				243732DA1DD3B55C00CCC4A7 /* Files */,
+				2499FA7C1DD25BF600A1B91E /* MainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2499FA7D1DD25BF600A1B91E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2499FA7E1DD25BF600A1B91E /* Collection.swift */,
+				2499FA7F1DD25BF600A1B91E /* InputStream.swift */,
+				244F8DB81DE4D390000DF66E /* NSBitmapImageRep.swift */,
+				2487E7641DD49C8F00EA939B /* NSObject.swift */,
+				2499FA801DD25BF600A1B91E /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2499FA811DD25BF600A1B91E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				243732CB1DD3926600CCC4A7 /* Builder */,
+				244F8DB31DE39576000DF66E /* DAT */,
+				243732CE1DD392B300CCC4A7 /* BinaryFile.swift */,
+				2499FA921DD2678700A1B91E /* File.swift */,
+				2499FA821DD25BF600A1B91E /* PAC.swift */,
+				2499FA941DD267CC00A1B91E /* IMG.swift */,
+				243732D41DD39D8300CCC4A7 /* WAV.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		2499FA831DD25BF600A1B91E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2499FA841DD25BF600A1B91E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2499FA851DD25BF600A1B91E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2487E75E1DD4984100EA939B /* Images */,
+				2487E75B1DD4984100EA939B /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		247E2A4C1DCFF2BB00851363 /* RBOPacReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247E2A5C1DCFF2BB00851363 /* Build configuration list for PBXNativeTarget "RBOPacReader" */;
+			buildPhases = (
+				247E2A491DCFF2BB00851363 /* Sources */,
+				247E2A4A1DCFF2BB00851363 /* Frameworks */,
+				247E2A4B1DCFF2BB00851363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBOPacReader;
+			productName = RBOPacReader;
+			productReference = 247E2A4D1DCFF2BB00851363 /* RBOPacReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		247E2A451DCFF2BB00851363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = ProudOfZiggy;
+				TargetAttributes = {
+					247E2A4C1DCFF2BB00851363 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 247E2A481DCFF2BB00851363 /* Build configuration list for PBXProject "RBOPacReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 247E2A441DCFF2BB00851363;
+			productRefGroup = 247E2A4E1DCFF2BB00851363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				247E2A4C1DCFF2BB00851363 /* RBOPacReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		247E2A4B1DCFF2BB00851363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2487E7611DD4984100EA939B /* Assets.xcassets in Resources */,
+				2487E7601DD4984100EA939B /* Main.storyboard in Resources */,
+				2487E7631DD49AAF00EA939B /* IMGFileController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		247E2A491DCFF2BB00851363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243732E01DD3B6E600CCC4A7 /* PACFileController.swift in Sources */,
+				2499FA8C1DD25BF600A1B91E /* InputStream.swift in Sources */,
+				244F8DBD1DE4F1CF000DF66E /* DATPose.swift in Sources */,
+				243732D11DD392ED00CCC4A7 /* PACFileBuilder.swift in Sources */,
+				2499FA951DD267CC00A1B91E /* IMG.swift in Sources */,
+				243732DE1DD3B64E00CCC4A7 /* IMGFileController.swift in Sources */,
+				243732DC1DD3B56A00CCC4A7 /* FileController.swift in Sources */,
+				2487E7691DD4F47600EA939B /* DATFileBuilder.swift in Sources */,
+				2499FA8B1DD25BF600A1B91E /* Collection.swift in Sources */,
+				243732CD1DD3927900CCC4A7 /* BinaryFileBuilder.swift in Sources */,
+				244F8DC11DE506DB000DF66E /* PoseBuilder.swift in Sources */,
+				244F8DB91DE4D390000DF66E /* NSBitmapImageRep.swift in Sources */,
+				244F8DB51DE39576000DF66E /* DAT.swift in Sources */,
+				244F8DB21DE39447000DF66E /* OrderedDictionary.swift in Sources */,
+				2499FA931DD2678700A1B91E /* File.swift in Sources */,
+				244F8DC31DE509CE000DF66E /* BodyPartBuilder.swift in Sources */,
+				243732D71DD39EB200CCC4A7 /* WAVFileBuilder.swift in Sources */,
+				243732E21DD3B71F00CCC4A7 /* WAVFileController.swift in Sources */,
+				244F8DC71DE64950000DF66E /* EffectBlockDataBuilder.swift in Sources */,
+				2499FA8D1DD25BF600A1B91E /* String.swift in Sources */,
+				243732CF1DD392B300CCC4A7 /* BinaryFile.swift in Sources */,
+				2499FA8A1DD25BF600A1B91E /* MainController.swift in Sources */,
+				2499FA8E1DD25BF600A1B91E /* PAC.swift in Sources */,
+				243732D51DD39D8300CCC4A7 /* WAV.swift in Sources */,
+				2499FA891DD25BF600A1B91E /* AppDelegate.swift in Sources */,
+				2487E7651DD49C8F00EA939B /* NSObject.swift in Sources */,
+				244F8DBF1DE4F611000DF66E /* DATBodyPart.swift in Sources */,
+				244F8DC51DE51CD0000DF66E /* EffectImageDataBuilder.swift in Sources */,
+				244F8DB71DE39587000DF66E /* UnknownTemp.swift in Sources */,
+				243732D31DD3933100CCC4A7 /* IMGFileBuilder.swift in Sources */,
+				244F8DBB1DE4F178000DF66E /* DATEffect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2487E75C1DD4984100EA939B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2487E75D1DD4984100EA939B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		247E2A5A1DCFF2BB00851363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		247E2A5B1DCFF2BB00851363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		247E2A5D1DCFF2BB00851363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/RBOPacReader/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ProudOfZiggy.RBOPacReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		247E2A5E1DCFF2BB00851363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/RBOPacReader/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ProudOfZiggy.RBOPacReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		247E2A481DCFF2BB00851363 /* Build configuration list for PBXProject "RBOPacReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247E2A5A1DCFF2BB00851363 /* Debug */,
+				247E2A5B1DCFF2BB00851363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		247E2A5C1DCFF2BB00851363 /* Build configuration list for PBXNativeTarget "RBOPacReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247E2A5D1DCFF2BB00851363 /* Debug */,
+				247E2A5E1DCFF2BB00851363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 247E2A451DCFF2BB00851363 /* Project object */;
+}
